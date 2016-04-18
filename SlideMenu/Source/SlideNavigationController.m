@@ -591,8 +591,8 @@ static SlideNavigationController *singletonInstance;
 - (void)prepareMenuForReveal:(Menu)menu
 {
 	// Only prepare menu if it has changed (ex: from MenuLeft to MenuRight or vice versa)
-    if (self.lastRevealedMenu && menu == self.lastRevealedMenu)
-        return;
+//    if (self.lastRevealedMenu && menu == self.lastRevealedMenu)
+//        return;
     
     UIViewController *menuViewController = (menu == MenuLeft) ? self.leftMenu : self.rightMenu;
 	UIViewController *removingMenuViewController = (menu == MenuLeft) ? self.rightMenu : self.leftMenu;
